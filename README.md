@@ -30,7 +30,4 @@ This repository is ideal for:
 ## 🤝 Contribution
 Feel free to fork, submit issues, or contribute enhancements to improve this collection!
 
-## 📜 License
-This project is licensed under the MIT License.
-
 ⭐ **Star this repo if you find it useful!**
