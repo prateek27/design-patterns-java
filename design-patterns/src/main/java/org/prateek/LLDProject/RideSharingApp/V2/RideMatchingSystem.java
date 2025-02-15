@@ -48,7 +48,7 @@ public class RideMatchingSystem {
         for(Driver driver:availableDrivers){
             double distance = driver.getLocation().calcDistance(passengerLocation);
             if(distance<minDist){
-                distance = distance;
+                minDist = distance; 
                 assignedDriver = driver;
             }
         }
