@@ -21,6 +21,16 @@ public class Airplane {
         System.out.println("Airplane " + id + " requesting landing");
         mediator.handleLandingRequest(this);
     }
+    
+    public void completeTakeoff() {
+        System.out.println("Airplane " + id + " has taken off");
+        mediator.notifyTakeoffComplete(this);
+    }
+
+    public void completeLanding() {
+        System.out.println("Airplane " + id + " has landed");
+        mediator.notifyLandingComplete(this);
+    }
 
     public void receiveNotification(String message) {
         System.out.println("Airplane " + id + ": " + message);

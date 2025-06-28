@@ -42,15 +42,15 @@ public class ControlTower implements Mediator {
     }
 
     // Simulate the completion of takeoff and free the runway
-    public void completeTakeoff(Airplane airplane) {
-        System.out.println("Airplane " + airplane.getId() + " has taken off");
+    @Override
+    public void notifyTakeoffComplete(Airplane airplane) {
         takeoffRunways++;
         System.out.println("Runway freed. Available takeoff runways: " + takeoffRunways);
     }
-
+    
     // Simulate the completion of landing and free the runway
-    public void completeLanding(Airplane airplane) {
-        System.out.println("Airplane " + airplane.getId() + " has landed");
+    @Override
+    public void notifyLandingComplete(Airplane airplane) {
         landingRunways++;
         System.out.println("Runway freed. Available landing runways: " + landingRunways);
     }

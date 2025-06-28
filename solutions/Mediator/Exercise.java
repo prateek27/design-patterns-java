@@ -35,30 +35,30 @@ public class Exercise {
         airplane4.requestTakeoff();
         
         // Manually simulate completion of the next requests
-        controlTower.completeTakeoff(airplane1);
-        controlTower.completeTakeoff(airplane2);
+        airplane1.completeTakeoff();
+        airplane2.completeTakeoff();
 
         airplane3.requestTakeoff();
         airplane4.requestTakeoff();
         
         // Manually simulate completion of the next requests
-        controlTower.completeTakeoff(airplane3);
-        controlTower.completeTakeoff(airplane4);
+        airplane3.completeTakeoff();
+        airplane4.completeTakeoff();
 
         // Additional requests to demonstrate functionality
         airplane1.requestLanding();
         airplane2.requestLanding();
         
         // Manually simulate completion of the next requests
-        controlTower.completeLanding(airplane1);
-        controlTower.completeLanding(airplane2);
+        airplane1.completeLanding();
+        airplane2.completeLanding();
         
         airplane3.requestLanding();
         airplane4.requestLanding();
         
         // Manually simulate completion of the next requests
-        controlTower.completeLanding(airplane3);
-        controlTower.completeLanding(airplane4);
+        airplane3.completeLanding();
+        airplane4.completeLanding();
 
         sc.close();
     }
