@@ -1,8 +1,6 @@
 package org.prateek.BehaviouralPatterns.TemplateMethodPattern;
 
 
-import javax.xml.crypto.Data;
-
 abstract class DataParser{
 
     //Template Method Define the steps of the algorithm
